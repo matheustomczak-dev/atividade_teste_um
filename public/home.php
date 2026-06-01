@@ -1,10 +1,12 @@
+
+// aqui vamos criar a página home.php, onde o usuário vai poder cadastrar novos usuários e ver os usuários cadastrados no banco de dados
 <?php
 session_start();
 if(!isset($_SESSION["usuario"])){
     header("Location: ../index.php");
     exit();
 }
-
+// aqui vamos criar a conexão com o banco de dados
 include("../infra/db/connect.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -22,6 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 };
 
+// aqui vamos criar a tabela para mostrar os usuários cadastrados no banco de dados
 ?>
 
 <html lang="en">
@@ -30,6 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
+
 <body>
     <h3>Bem-Vindo! <?php echo $_SESSION["usuario"]; ?></h3>
     <a href="logout.php"> Sair</a>
@@ -54,6 +58,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <button type="submit">Cadastrar</button>
     </form>
     <hr>
+
+    // aqui vamos incluir o arquivo table.php para mostrar os usuários cadastrados no banco de dados
     <?php
     
     include("components/table.php")
