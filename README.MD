@@ -7,3 +7,7 @@ banco de dados.
 
 ** Também foi feito um processo de segurança onde caso o usuário não tenha Login ele será instantâniamente
 redirecionado para a pagina de Login.
+
+
+** Foi também adicionado O update e delete, do CRUD sendo U update, e D de delet. Agora os usuarios alem 
+adicionar também podem deletar cadastros antigos. 
