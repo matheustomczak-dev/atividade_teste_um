@@ -8,6 +8,8 @@
         <th>ID</th>
         <th>Usuário</th>
         <th>Senha</th>
+        <th>Excluir</th>
+        <th>Editar</th>
     </tr>
     // aqui vamos usar o PHP para buscar os usuários cadastrados no banco de dados e mostrar na tabela
     <?php
@@ -23,6 +25,8 @@
                     <td>". $linha['id'] . "</td>
                     <td>". $linha['usuario'] . "</td>
                     <td>". $linha['senha'] . "</td>
+                    <td><a href='delet.php?id=" . $linha['id'] . "'>Excluir</a></td>
+                    <td><a href='edit.php?id=" . $linha['id'] . "'>Editar</a></td>
                 </tr>
         ";
 

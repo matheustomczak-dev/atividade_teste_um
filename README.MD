@@ -9,5 +9,4 @@ banco de dados.
 redirecionado para a pagina de Login.
 
 
-** Foi também adicionado O update e delete, do CRUD sendo U update, e D de delet. Agora os usuarios alem 
-adicionar também podem deletar cadastros antigos. 
+** Criarei um botão chamado "deletar" 
