@@ -9,4 +9,5 @@ banco de dados.
 redirecionado para a pagina de Login.
 
 
-** Criarei um botão chamado "deletar" 
+** Criarei um botão chamado "deletar", e também um chamado "Editar" em movas colunas. após isso farei um documento chamado Delet
+ali estará a função do botão onde será conctado com o banco de dados para ter a possibilidade de deletar os dados registrados

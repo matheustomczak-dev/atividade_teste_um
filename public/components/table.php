@@ -25,8 +25,8 @@
                     <td>". $linha['id'] . "</td>
                     <td>". $linha['usuario'] . "</td>
                     <td>". $linha['senha'] . "</td>
-                    <td><a href='delet.php?id=" . $linha['id'] . "'>Excluir</a></td>
-                    <td><a href='edit.php?id=" . $linha['id'] . "'>Editar</a></td>
+                    <td><a href='components/delet.php?id=" . $linha['id'] . "'>Excluir</a></td>
+                    <td><a href='components/edit.php?id=" . $linha['id'] . "'>Editar</a></td>
                 </tr>
         ";
 
