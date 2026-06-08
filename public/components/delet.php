@@ -5,7 +5,7 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
     // Conectar ao banco de dados
-    $conn = new mysqli('localhost', 'matheus_tomczak_2026', 'root', '', 'atividade_teste_um');
+    $conn = new mysqli('localhost', 'root', 'root', 'sistema_simples_m1');
     
     // Verificar conexão
     if ($conn->connect_error) {
