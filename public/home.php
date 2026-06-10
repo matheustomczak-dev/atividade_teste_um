@@ -1,5 +1,4 @@
 
-// aqui vamos criar a página home.php, onde o usuário vai poder cadastrar novos usuários e ver os usuários cadastrados no banco de dados
 <?php
 session_start();
 if(!isset($_SESSION["usuario"])){
@@ -24,7 +23,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 };
 
-// aqui vamos criar a tabela para mostrar os usuários cadastrados no banco de dados
 ?>
 
 <html lang="en">
@@ -59,7 +57,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </form>
     <hr>
 
-    // aqui vamos incluir o arquivo table.php para mostrar os usuários cadastrados no banco de dados
     <?php
     
     include("components/table.php")

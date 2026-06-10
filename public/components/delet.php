@@ -12,6 +12,13 @@ if (isset($_GET['id'])) {
         die("Conexão falhou: " . $conn->connect_error);
     }
 
+    //confirmar exclusão
+    if (!isset($_GET['confirm']) || $_GET['confirm'] !== 'yes') {
+        echo "Tem certeza que deseja excluir este registro? <a href='delet.php?id=$id&confirm=yes'>Sim</a> | <a href='index.php'>Não</a>";
+        exit;
+    }
+
+
     // Preparar e executar a consulta de exclusão
     $sql = "DELETE FROM usuarios WHERE id = $id";
 
@@ -20,6 +27,9 @@ if (isset($_GET['id'])) {
     } else {
         echo "Erro ao excluir registro: " . $conn->error;
     }
+
+    //voltar para pagina de edição
+    echo "<br><a href='../home.php'>Voltar</a>";
 
     $conn->close();
 }
